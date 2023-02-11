@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <button id="update-btn">Update </button>
+    <button id="clear-btn">Clear </button>
+    <ul id="ul-el">
+    </ul>
+
+    <button id="open-btn">Add new rule</button>
+
+    <div class="rule-popup" id="ruleForm">
+        <h1>Add new rule</h1>
+
+        <label for="url"><b>URL</b></label>
+        <input type="text" placeholder="Enter url" id="rule-url">
+
+        <label for="max-time"><b>Maximal Time (in minutes)</b></label>
+        <input type="number" name="max-time" step="0.1" min="0" id="rule-time" placeholder="Enter maximal time ">
+
+        <button type="button" id="submit-btn">Submit rule</button>
+        <button type="button" id="close-btn" class="btn cancel">Cancel</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
